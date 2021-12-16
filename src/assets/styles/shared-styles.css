@@ -1,0 +1,38 @@
+html,
+body {
+  margin: 0px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}
+
+p {
+  margin: 5px 0px;
+}
+
+:root {
+  --header-height: 60px;
+  --header-font-size: 1em;
+
+  --page-width: 100vw;
+  --page-height: calc(100vh - var(--header-height));
+
+  --icon-color: white;
+
+  --theme-primary-color: #bf004d;
+  --theme-light-primary-color: #de463c;
+  --theme-white: #fff;
+  --theme-gray: #c8c8ca;
+  --theme-dark-gray: #b5b5b5;
+
+  --header-icon-width: 20px;
+
+  --font-small-size: 0.9em;
+
+  --font-color-default: #747474;
+}

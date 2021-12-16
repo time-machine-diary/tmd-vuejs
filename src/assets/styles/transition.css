@@ -1,0 +1,38 @@
+:root {
+  --transition: transform 0.3s;
+}
+.slide-enter {
+  transform: translateX(100%);
+}
+.slide-enter-active,
+.slide-enter-to {
+  position: absolute;
+  transition: var(--transition);
+  width: var(--page-width);
+  height: var(--page-height);
+}
+.slide-leave-active {
+  transform: translateX(-100%);
+  position: absolute;
+  transition: var(--transition);
+  width: var(--page-width);
+  height: var(--page-height);
+}
+
+.reverse-slide-enter {
+  transform: translateX(-100%);
+}
+.reverse-slide-enter-active,
+.reverse-slide-enter-to {
+  position: absolute;
+  transition: var(--transition);
+  width: var(--page-width);
+  height: var(--page-height);
+}
+.reverse-slide-leave-active {
+  transform: translateX(100%);
+  position: absolute;
+  transition: var(--transition);
+  width: var(--page-width);
+  height: var(--page-height);
+}
